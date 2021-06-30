@@ -10,6 +10,9 @@ For this it scans the functions and finds customer elements that are valid and f
 */
     printf("Writing customer.txt...\n");
     FILE *fp = fopen("customer.txt","w");
+    fprintf(fp,"====================\n");
+    fprintf(fp,"phno--customer name\n");
+    fprintf(fp,"====================\n");
     for (int i=0;i<100;i++){
         if((c+i)->phno!=-1){
             //checking if element exists, if it exists then write to file otherwise skip
@@ -30,6 +33,9 @@ For this it scans the functions and finds item elements that are valid and final
 */
     printf("Writing items.txt...\n");
     FILE* fp = fopen("items.txt","w");
+    fprintf(fp,"====================\n");
+    fprintf(fp,"id--item name--price\n");
+    fprintf(fp,"====================\n");
     for(int i=0;i<100;i++){
         if((il+i)->itemid!=-1){
             //check if element exists, if it does then write to file else skip

@@ -55,6 +55,11 @@ Uses filehandling methods to do the same.
 */
     char temp[20],buffer[30];
     int i=0;
+    //ignoring first 3 lines of file
+    for(int j=0;j<3;j++)
+        fgets(buffer,30,fp);
+
+    //reading data from file
     for(i;!feof(fp);i++){
         fgets(buffer,30,fp); //reading entire line and applying it into buffer
         
@@ -112,6 +117,11 @@ Uses filehandling methods to do the same.
 */
     char temp[20],buffer[40];
     int i=0,count;
+
+    //ignoring first 3 lines of file
+    for(int j=0;j<3;j++)
+        fgets(buffer,40,fp);
+
     for(i;!feof(fp);i++){
         count=0;
         fgets(buffer,40,fp); //reads entire line and copies it to buffer
