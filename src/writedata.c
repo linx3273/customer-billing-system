@@ -13,7 +13,8 @@ For this it scans the functions and finds customer elements that are valid and f
     for (int i=0;i<100;i++){
         if((c+i)->phno!=-1){
             //checking if element exists, if it exists then write to file otherwise skip
-            fprintf(fp,"%d\n%s\n",(c+i)->phno,(c+i)->name);
+            //fprintf(fp,"%d\n%s\n",(c+i)->phno,(c+i)->name);
+            fprintf(fp,"%d--%s\n",(c+i)->phno,(c+i)->name);
         }              
     }
     fclose(fp);
@@ -32,7 +33,8 @@ For this it scans the functions and finds item elements that are valid and final
     for(int i=0;i<100;i++){
         if((il+i)->itemid!=-1){
             //check if element exists, if it does then write to file else skip
-            fprintf(fp,"%d\n%0.0f\n%s\n",(il+i)->itemid,(il+i)->value,(il+i)->itemname);
+            //fprintf(fp,"%d\n%0.0f\n%s\n",(il+i)->itemid,(il+i)->value,(il+i)->itemname);
+            fprintf(fp,"%d--%s--%0.0f\n",(il+i)->itemid,(il+i)->itemname,(il+i)->value);
         }
     }
     fclose(fp);

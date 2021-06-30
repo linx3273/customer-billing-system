@@ -1,10 +1,4 @@
-1
-t1
-2
-t2
-3
-kekw
-4
-lol
-5
-pog
+1--pog
+2--kekw
+3--kappa
+4--lulw
