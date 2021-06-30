@@ -1,13 +1,8 @@
-.vs/slnx.sqlite
-.vs/VSWorkspaceState.json
-.vs/2nd Sem Project/v16/.suo
-.vscode/launch.json
-.vscode/tasks.json
-synopsis/phase 1 synopsis.docx
-a.exe
-obj/billfunctions.o
-obj/customerfunctions.o
-obj/initialization.o
-obj/itemfunctions.o
-obj/main.o
-obj/writedata.o
+#excluding directories
+.vs/
+.vscode/
+synopsis/
+
+#excluding by file extensions 
+*.o
+*.exe
