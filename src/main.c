@@ -32,7 +32,7 @@ int main(){
         printf("\t2. Create Bill\n");
         printf("\t3. Items List\n");
         printf("\t0. Exit\n");
-        printf("\t4.SAFE EXIT\n\n");
+        printf("\t4. sSAFE EXIT\n\n");
         
         printf("Enter Choice: ");
         scanf("%d",&s);
@@ -50,6 +50,7 @@ int main(){
                     printf("\t4. Main Menu\n\n");
                     
                     printf("Enter Choice: ");
+                    fflush(stdin);
                     scanf("%d",&y);
                     switch(y){
                         case 1: //function to create new customer entries
@@ -102,6 +103,7 @@ int main(){
                         printf("\t4. Main Menu\n\n");
                         
                         printf("Enter Choice: ");
+                        fflush(stdin);
                         scanf("%d",&y);
                         switch(y){
                             case 1: //function to add item to the bill
@@ -142,6 +144,7 @@ int main(){
                     printf("\t4. Main Menu\n\n");
 
                     printf("Enter Choice: ");
+                    fflush(stdin);
                     scanf("%d",&y);
                     switch(y){
                         case 1: //function to view list of items
