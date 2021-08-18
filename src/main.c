@@ -32,7 +32,7 @@ int main(){
         printf("\t2. Create Bill\n");
         printf("\t3. Items List\n");
         printf("\t0. Exit\n");
-        printf("\t4. sSAFE EXIT\n\n");
+        printf("\t4. SAFE EXIT\n\n");
         
         printf("Enter Choice: ");
         scanf("%d",&s);
